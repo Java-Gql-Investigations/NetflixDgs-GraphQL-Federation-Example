@@ -1,0 +1,11 @@
+type Query {
+    usersReviews(userId: Int): [Review]
+    productsReviews(userId: Int): [Review]
+}
+
+type Review {
+    id: Int
+    userId: Int
+    productId: Int
+    rating: Int
+}
